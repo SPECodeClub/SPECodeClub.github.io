@@ -17,11 +17,11 @@ function Page3(){
 }
 
 function Website(){
-	window.location.href = '../index.html';
+	window.location.href = 'https://specodeclub.github.io/';
 }
 
 function Website2(){
-	window.location.href = 'index.html';
+	window.location.href = 'https://specodeclub.github.io/';
 }
 
 
