@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Quiz!</title>
+<link href ="../../../style.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src = "../../../main.js"></script>
+
+</head>
+
+<body style="background-color:grey;">
+
+<body>
+<div id="box" style="position:absolute; left:5px; top:5px;">
+<input id = "button" type = "button" value = "Index" onclick = "Index()">
+</div>
+<div id="box2" style="position:absolute; left:5px; top:105px;">
+<h1>Here's a quiz to test what you've learnt.</h1>
+
+<br>
+
+<form id = "quiz" name = "quiz">
+
+
+<p class = "questions">Who makes Micro:bits?</p>
+<input type = "radio" id = "mc" name = "question1" value = "BBC"> BBC<br>
+<input type = "radio" id = "mc" name = "question1" value = "Adafruit"> Adafruit<br>
+<input type = "radio" id = "mc" name = "question1" value = "Elegoo"> Elegoo<br>
+
+<p class = "questions">How many LEDS does a Micro:bit have?</p>
+<input type = "radio" id = "mc" name = "question2" value = "36"> 36<br>
+<input type = "radio" id = "mc" name = "question2" value = "25"> 25<br>
+<input type = "radio" id = "mc" name = "question2" value = "16"> 16<br>
+
+<p class = "questions">What can Micro:bits NOT be coded in?</p>
+
+<input type = "radio" id = "mc" name = "question3" value = "JavaScript"> JavaScript<br>
+<input type = "radio" id = "mc" name = "question3" value = "Python"> Python<br>
+<input type = "radio" id = "mc" name = "question3" value = "Pearl"> Pearl<br>
+
+
+<input id = "button" type = "button" value = "I'm finished!" onclick = "checkmicrobitbasics();">
+
+
+</form>
+
+</div>
+<div id = "after_submit" style="position:absolute; left:5px; top:675px;">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+</body>
+</html>
