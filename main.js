@@ -17,11 +17,11 @@ function Page3(){
 }
 
 function Website(){
-	window.location.href = '../Index.html';
+	window.location.href = '../index.html';
 }
 
 function Website2(){
-	window.location.href = 'Index.html';
+	window.location.href = 'index.html';
 }
 
 
