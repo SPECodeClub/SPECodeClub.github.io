@@ -71,7 +71,7 @@ function Platform_game(){
 }
 
 function Microbit_chain(){
-	window.location.href = 'Microbit/Microbit chain/Multi-page.html';
+	window.location.href = 'Microbit/Microbit chain/Index.html';
 }
 
 function Tic_tac_toe(){
