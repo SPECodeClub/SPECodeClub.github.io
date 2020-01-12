@@ -21,7 +21,7 @@ function Website(){
 }
 
 function Website2(){
-	window.location.href = 'https://specodeclub.github.io/';
+	window.location.href = 'https://specodeclub.github.io/index.html';
 }
 
 
