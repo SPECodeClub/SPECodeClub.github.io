@@ -47,7 +47,8 @@
  </div>
  <div id="content" data-role = "content">
   <p>
-  Hello! This website teaches you about X, Y and Z.
+  Hello! This is a tutorial on how to make a platform game in scratch. Prepare yourselves - this is a little advanced, but a great game. Platform games are a common genre of games where the character jumps between platforms in an attempt to reach the goal. For example, Mario games are popular platformers.
+  <a href="https://github.com/SPECodeClub/Micro-bit-chain---SPECodeClub">Finished files on GitHub</a>
   </p>
   <a data-role = "button" href = "#page1">Page 1</a>
   <a data-role = "button" href = "#page2">Page 2</a>
@@ -62,7 +63,32 @@
  </div>
  <div id="content" data-role = "content">
   <p>
- This is the page 1 content.
+ To start off this project, you will need to open a new scratch project. Next, select the costumes tab and hover over the new costume button. Select the paint icon. We need to draw a new character - I reccomend drawing a simple red square to start with. Rename it Player.
+ <br><br>
+ <img src="img/1.png" height="337px" width="600px" alt="A red square">
+ <br><br>
+ You'll also need to make the platforms. Select to paint a new sprite and make a blue rectange at the bottom of the screen. Make sure the platforms are centered on the screen by changing it's position to 0, 0. Rename it Platforms.
+ <br><br>
+ <img src="img/2.png" height="337px" width="600px" alt="Platforms">
+ <br><br>
+ You'll also want to add some more levels to your game. To start off, I reccomend having two levels and a well done page. Use the color yellow for a portal at the end of the level, and the color red for an obstacle. Make sure you're using exactly the same shade of blue, yellow and red each time.
+ <br><br>
+ <img src="img/3.png" height="337px" width="600px" alt="Levels">
+ <br><br>
+ <img src="img/15.png" height="337px" width="600px" alt="Levels">
+ <br><br>
+ <img src="img/16.png" height="337px" width="600px" alt="Levels">
+ <br><br>
+ Now it's time for the code! We will have four main parts to the code:<br><br>
+ - The main part, which will reset the game each time we restart and tell scratch to run the other blocks of code<br>
+ - The controls, which will allow us to move and jump<br>
+ - Gravity, which is self-explanitory<br>
+ - And the levels, which will help us change levels and detect obstacles.<br><br>
+ But first, we need to add a little script to the platforms. Make a new variable called levels and delete 'My variable'. Then drag the following blocks over:
+ <br><br>
+ <img src="img/4.png" height="337px" width="600px" alt="Blocks">
+ <br><br>
+ Continue on the next page.
  </p>
   </a>
  </div>
@@ -75,7 +101,31 @@
  </div>
  <div id="content" data-role = "content">
   <p>
-  This is the page 2 content.
+  Now it's time to do some serious coding! Scratch has a way of splitting up your code into chunks, which will be useful to help us organise our code. It's under 'My blocks'. Create a new block by selecting 'Make a block'. We'll need a few variables too, some of which we need to hide, so start off with this code:
+ <br><br>
+ <img src="img/5.png" height="337px" width="600px" alt="Main loop">
+ <br><br>
+ Position the 'Levels' variable in the top left corner of the screen. Now, take the 'define Controls' block you created and add the following code. Then, push the green flag. You'll notice that we can move through the platforms - we'll need to change this.
+ <br><br>
+ <img src="img/6.png" height="337px" width="600px" alt="Controls">
+ <br><br>
+ <img src="img/7.png" height="337px" width="400px" alt="Levels">
+ <br><br>
+ Edit the code to check if the Player touches the blue. To change what color it senses for, click on the color and then on the platforms. This is why we need to make sure all the colors are exactly the same shade - it will only sense for the precise color you select. If the player does touch the blue, make the player reverse again. This should remove the bug.
+ <br><br>
+ <img src="img/8.png" height="337px" width="600px" alt="Edit">
+ <br><br>
+ Next, we need to add the gravity. You might notice this makes the movement less smooth - don't worry as we'll fix this later.
+ <br><br>
+ <img src="img/9.png" height="337px" width="600px" alt="Gravity">
+ <br><br>
+ We're still missing an integral part of this game - jumping! Add this code to our controls script, then push the green flag to try again.
+ <br><br>
+ <img src="img/10.png" height="337px" width="600px" alt="Jump code">
+ <br><br>
+ <img src="img/11.png" height="337px" width="600px" alt="Jump code">
+ <br><br>
+ Our problem here is the gravity script. It's slowing the whole thing down! You also might notice that when we jump onto a platform, we slowly slide up until we arn't touching it anymore. This is also a problem with the gravity script. Find out how to fix it on the next page!
   </p>
   </a>
  </div>
@@ -87,7 +137,19 @@
  </div>
  <div id="content" data-role = "content">
   <p>
-  This is the page 3 content.
+  Our gravity script is slowing the whole thing down. Although it's doing it's job, it's taking a bit of time to do it. We need a way to skip the movement and get straight to the result of the movement. Luckily for us, scratch has just the thing we need!<br>First, left-click on the 'define Gravity' block. Then select edit, and check the 'Run without screen refresh' box. This will tell scratch to make the calculation without refreshing what we can see on the screen. This makes everything a lot faster! Click 'OK', then try your game out.
+ <br><br>
+ <img src="img/12.png" height="337px" width="600px" alt="Run without screen refresh">
+ <br><br>
+ There's not much left to do! We need to tell scratch what to do if we touch the color red or yellow.
+ <br><br>
+ <img src="img/13.png" height="337px" width="600px" alt="Levels">
+ <br><br>
+ If we touch yellow, change the level by 1 and go back to the start position. If we touch red, go back to the start position but don't change the level! Finally, we want the level variable to hide when the level is equal to 3 (or wherever your well done message is if you add more levels).
+ <br><br>
+ <img src="img/14.png" height="337px" width="600px" alt="Finished">
+ <br><br>
+ Ta da! We're done! Play your game, show it off to your friends, and add more levels! As a chllenge, try adding more colors into the game. For instance, try creating a green bouncepad!<br>Hint: Try using the jumping code but changing fallspeed to takeoffspeed x 2 instead!
   </p>
   </a>
  </div>
