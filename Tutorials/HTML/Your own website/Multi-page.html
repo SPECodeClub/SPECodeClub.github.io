@@ -47,7 +47,12 @@
  </div>
  <div id="content" data-role = "content">
   <p>
-  Hello! This website teaches you about X, Y and Z.
+  Hello! So you want your own website? Well, it's rather difficult to get one working that everyone on the web can see, but we can still code one! If you want a real .com website, you'll have to pay money, but there are a couple of free ways. Check out
+  <a href="https://sites.google.com/">Google sites</a>
+  if you juat want something online without any code. The address will look a bit funny, but it'll be out there! This website was made with
+  <a href="https://pages.github.com/">GitHub pages,</a>
+  but that's a bit complicated. So back to our website - we can code a .html file that has headings, text and images, and open it in our web browser if we have the file on our computer, making it look just like a real site!
+  <a href="https://github.com/SPECodeClub/Your-own-website---SPECodeClub">Finished files on GitHub</a>
   </p>
   <a data-role = "button" href = "#page1">Page 1</a>
   <a data-role = "button" href = "#page2">Page 2</a>
@@ -62,7 +67,34 @@
  </div>
  <div id="content" data-role = "content">
   <p>
- This is the page 1 content.
+  To start off with, we need to set up our html file, and learn how to open it on a computer. First, open notepad by pressing the windows button and typing 'notepad', then pushing enter.
+ <br><br>
+ <img src="img/1.png" alt="New notepad file">
+ <br><br>
+  Now, we need to type out the following code:
+  <br><br>
+  &lt;!DOCTYPE html&gt;<br>
+  &lt;html&gt;<br>
+  &lt;body&gt;<br>
+  <br><br>
+  &lt;/body&gt;<br>
+  &lt;/html&gt;<br>
+ <br><br>
+ <img src="img/2.png" alt="Basic html code">
+ <br><br>
+  Then, we have to save the file as a .html file. To do this, select 'File' and 'Save as', then select the menu under where you type the filename and select 'All files'. Then, type your file's name followed by .html<br>
+ <br><br>
+ <img src="img/3.png" alt="Saving as .html">
+ <br><br>
+  Code breakdown:<br>
+  &lt;!DOCTYPE html&gt; - tells the computer it's a html file<br>
+  &lt;html&gt; - code goes inside this tag!<br>
+  &lt;body&gt; - body of the code goes in here<br>
+  <br><br>
+  &lt;/body&gt; - ends the body of the code<br>
+  &lt;/html&gt; - ends the html code<br>
+  <br><br>
+  Now, we can go into the folder where we saved our file, right-click on it and select 'Open with - Google chrome'. Ta-da! You have created your first website. It looks pretty blank right now so turn over to the next page to make some content!
  </p>
   </a>
  </div>
@@ -75,7 +107,39 @@
  </div>
  <div id="content" data-role = "content">
   <p>
-  This is the page 2 content.
+  To add some content to our page, we need to be aware of four tags.<br>
+  The first is &lt;title&gt; and &lt;/title&gt;, which is the title for our page and will appear in the tab at the top. When people have multiple tabs open at once on Google, they need to know which one is which!
+ <br><br>
+ <img src="img/4.png" alt="Title tag">
+ <br><br>
+  Next, we have &lt;h1&gt; and &lt;/h1&gt;, which are heading tags. Anything within them will become a header. The lower the number, the larger the header - it's between 1 and 6.
+ <br><br>
+ <img src="img/5.png" alt="Header tag">
+ <br><br>
+  Try reloading your website. If you've added those tags, it should now have a title and a heading! Well done!<br>
+  After this, we'll need some proper text. It's not a very good website without a bit of content! The tags for this are &lt;p&gt; and &lt;/p&gt;. Try it out!
+ <br><br>
+ <img src="img/6.png" alt="Text tag">
+ <br><br>
+ Finally, we need to learn about line breaks. Currently, if you do something like this, the lines of text will just appear next to each other:<br><br>
+ &lt;!DOCTYPE html&gt;<br>
+ &lt;html&gt;<br>
+ &lt;title&gt;My website&lt;/title&gt;<br>
+ &lt;body&gt;<br>
+ <br><br>
+ &lt;h1&gt;My First Heading&lt;/h1&gt;<br>
+ &lt;p&gt;<br>
+ This is the text in my website!<br>
+ I like my website.<br>
+ &lt;/p&gt;<br>
+ <br><br>
+ &lt;/body&gt;<br>
+ &lt;/html&gt;<br><br>
+  To fix this, we add line breaks. The syntax (code) for them is &lt;br&gt;. You can add one for a new line, or two for a new paragraph!
+ <br><br>
+ <img src="img/7.png" alt="Line break tag">
+ <br><br>
+ Try your website out. Wow! It's really coming together nicely. Have a look at the next page for a few more features!
   </p>
   </a>
  </div>
@@ -87,7 +151,28 @@
  </div>
  <div id="content" data-role = "content">
   <p>
-  This is the page 3 content.
+  Our website has text, but its a bit boring on its own. We need a way to make our website more advanced - images!<br><br>
+  To add images, we need to have an image. We can use another image on the web, but it's better to download one. Right click on your image, then select 'Save as'. Save it in the same folder as your .html file! If you are using one online without downloading it, right click on the image and choose 'Copy link address'. Make sure you are using a free image - we don't want copyright issues.<br>
+  To add the image, write the following tag into your code:<br><br>
+  &lt;img src="[change this to your file's location]" alt="[The alternative text]"&gt;<br><br>
+  Your file's location needs to be the name of your image. If you are using one from the web, paste the url you copied earlier there. The alt text is used if somebody cannot see the image (for instance if their browser is too old to show images, or they are blind and use narrator to interact with the computer). The alt text is shown next to a small icon of an image (indicating the image cannot be shown), or read aloud in these cases.
+  <br><br>
+  <img src="img/8.png" alt="Image tag">
+  <br><br>
+  Try it out. Ta-da! Your website is now interesting!<br>
+  Next, we need to spice things up a little. Having white and black is boring! We need to add two things here. First, in the body tag, add<br><br> &lt;body style="background-color:blue;"&gt;<br><br> to your code. This will change the color of your background!<br><br>Finally, add two font tags around all of your text. They should look like this:
+  <br><br>
+  <img src="img/9.png" alt="Colors tags">
+  <br><br>
+  Wonderfull! Try your new colourful website out! There are loads of colors to pick from, so you don't have to stick to basics. For example, try coral!<br><br>Finally, we're left with just one problem - our image seems a little big right now. Edit the code until it looks like this:
+  <br><br>
+  <img src="img/10.png" alt="Image size">
+  <br><br>
+  Excellent! We have told the computer our image cannot be larger than 400x600 pixels, so it scaled it down.<br><br>
+  Well done! You have finished your website! Try to search online for more tutorials on how to make more features - there's a lot of great stuff you can do!
+  <br><br>
+  <img src="img/11.png" alt="Finished website">
+  <br><br>
   </p>
   </a>
  </div>
