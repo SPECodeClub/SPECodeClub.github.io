@@ -70,6 +70,10 @@ function Platform_game(){
 	window.location.href = 'Scratch/Platform game/Multi-page.html';
 }
 
+function Racing_game(){
+	window.location.href = 'Scratch/Racing game/Multi-page.html';
+}
+
 function Microbit_chain(){
 	window.location.href = 'Microbit/Microbit chain/Multi-page.html';
 }
