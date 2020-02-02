@@ -74,6 +74,10 @@ function Racing_game(){
 	window.location.href = 'Scratch/Racing game/Multi-page.html';
 }
 
+function Star_hunter(){
+	window.location.href = 'Scratch/Star Hunter/Multi-page.html';
+}
+
 function Microbit_chain(){
 	window.location.href = 'Microbit/Microbit chain/Multi-page.html';
 }
