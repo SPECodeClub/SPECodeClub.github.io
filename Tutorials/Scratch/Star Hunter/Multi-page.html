@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8">
+ <title>multiPage.html</title>
+
+ <link rel="stylesheet"
+  href="1.3.1.css" />
+ <script src="1.9.1.js"></script>
+
+ <script src="1.3.1.js">
+ </script>
+
+ <script>
+ function Back(){
+	window.location.href = '../../Tutorials.html';
+}
+ </script>
+
+ <style type = "text/css">
+
+ #foot {
+  font-size: 75%;
+  font-style: italic;
+  text-align: center;
+ }
+ pre {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  width: 8em;
+ }
+ </style>
+
+</head>
+
+
+<body>
+
+ <div id = "index" data-role = "page" data-theme = "b">
+ <div id="head" data-role = "header">
+  <input id = "button" class = "ui-btn-left" type = "button" value = "Back" onclick = "Back()">
+  <h1>Video</h1>
+  <a href = "#page1" class = "ui-btn-right">Next page</a>
+ </div>
+ <div id="content" data-role = "content">
+  <p>
+  Hello! Today we're going to make a star hunter game on scratch. Watch the video!
+  <br>
+  <a href="https://github.com/SPECodeClub/Star-hunter---SPECodeClub">Finished files on GitHub</a>
+  <br><br>
+  <video width="960" height="540" controls>
+  <source src="img/Star Hunter Video.mp4" type=video/mp4>
+  </video>
+  </p>
+ </div>
+ </div>
+
+</body>
+
+
+</html>
